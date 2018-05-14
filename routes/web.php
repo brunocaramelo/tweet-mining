@@ -18,3 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/userTimeline', function()
+{
+	// return Twitter::getUserTimeline(['screen_name' => 'thujohn', 'count' => 20, 'format' => 'json']);
+    $ret = Twitter::getSearch(array('q'  => '#worldcup', 'count' => 10));
+    dd($ret);
+});

@@ -3,7 +3,8 @@
 namespace Tweet\Admin\Users\Entities;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Jenssegers\Mongodb\Auth\User as Authenticatable;
+use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
 
 class UserEntity extends Authenticatable
 {

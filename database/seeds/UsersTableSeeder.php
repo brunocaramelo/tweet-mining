@@ -18,6 +18,7 @@ class UsersTableSeeder extends Seeder
 
     private function createAll()
     {
+        //senha : password
         User::firstOrCreate([
                                 'name' => 'admin',
                                 'email' => 'admin@tal.com.br',
